@@ -1,3 +1,2 @@
 # stepik_auto_tests_course
-new string 1:
-new str 2:
+2_4_les5.py - тестируем работу implicitly_wait
