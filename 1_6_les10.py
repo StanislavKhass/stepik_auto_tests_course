@@ -8,14 +8,14 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    element1 = browser.find_element(By.XPATH, "//form/div[1]/div[1]/input")
-    element1.send_keys("Test")
+    element_name = browser.find_element(By.XPATH, "//form/div[1]/div[1]/input")
+    element_name.send_keys("Test")
 
-    element2 = browser.find_element(By.XPATH, "//form/div[1]/div[2]/input")
-    element2.send_keys("Test2")
+    element_lastname = browser.find_element(By.XPATH, "//form/div[1]/div[2]/input")
+    element_lastname.send_keys("Test2")
 
-    element3 = browser.find_element(By.XPATH, "//form/div[1]/div[3]/input")
-    element3.send_keys("Test3")
+    element_email = browser.find_element(By.XPATH, "//form/div[1]/div[3]/input")
+    element_email.send_keys("Test3")
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
