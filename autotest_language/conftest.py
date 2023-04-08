@@ -1,11 +1,12 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 
 
 def pytest_addoption(parser):
     parser.addoption('--language', action='store', default=None,
-                     help="Выбор язвыка для драйвера")
+                     help="Выбор язвыка для браузера")
 
 @pytest.fixture(scope="function")
 def browser(request):
